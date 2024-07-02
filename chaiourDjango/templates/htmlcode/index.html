@@ -1,13 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul chai</title>
-    <link rel="stylesheet" href="{% static 'stayle.css' %}">
-</head>
-<body>
-    <h1>Wellcome to the Rahul Web..</h1>
-</body>
-</html>
+{% extends "layout.html" %} 
+
+{% block title %}
+home page
+{% endblock %}
+
+{% block content %}
+<h1>hello wellcome to Rahul web </h1>
+{% endblock %}
