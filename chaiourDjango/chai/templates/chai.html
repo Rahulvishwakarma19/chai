@@ -10,11 +10,11 @@ Chai page
     {% for chai in chais %}
     <div>
         <img src="{{chai.image.url}}" alt="">
-        <a href="{% url'chai_detail' chai.id %}">
-            <button>
-                {{chai.type}} - {{chai.id}}
-            </button>
+        <a href="{% url 'chai_detail' chai.id %}">
         </a>
+        <button>
+            {{chai.type}} - {{chai.id}}
+        </button>   
     </div>
     {% endfor %}
 </div>
